@@ -4,6 +4,8 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.persistence.PersistentDataContainer;
+
 import java.util.Objects;
 
 public class TabHome implements CommandExecutor {
@@ -16,10 +18,11 @@ public class TabHome implements CommandExecutor {
             return true;
         }
 
-        Player player = (Player) sender;
+        Player p = (Player) sender;
+        PersistentDataContainer data = p.getPersistentDataContainer();
 
         if (args.length == 0){
-            player.sendMessage("§c§lPlease specify <set>, or <del> to modify your homes.");
+            p.sendMessage("§c§lPlease specify <set>, or <del> to modify your homes.");
             return false;
         }
 
@@ -32,13 +35,15 @@ public class TabHome implements CommandExecutor {
  *
  */
         if (Objects.equals(args[0], "set")){
-                player.sendMessage("§lyou chose to set");
+                p.sendMessage("§lyou chose to set");
+
+
 
         } else if (Objects.equals(args[0], "del")) {
-                player.sendMessage("§lyou chose to delete");
+                p.sendMessage("§lyou chose to delete");
 
         } else {
-            player.sendMessage("§c§lPlease specify <set>, or <del> to modify your homes.");
+            p.sendMessage("§c§lPlease specify <set>, or <del> to modify your homes.");
             return false;
         }
 

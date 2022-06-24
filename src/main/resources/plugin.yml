@@ -10,4 +10,7 @@ commands:
   tabhome:
     description: Used to manage your homes that are displayed in Tab. Maximum 3 Homes.
     usage: "Usage: /tabhome [ set | del ] < home >"
+  post:
+    description: Use to post your coordinates quickly to chat
+    usage: "/post"
 

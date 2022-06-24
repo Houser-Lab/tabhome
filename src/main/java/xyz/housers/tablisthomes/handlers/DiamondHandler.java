@@ -25,10 +25,12 @@ public class DiamondHandler implements Listener {
         if (block.getType() == Material.DIAMOND_ORE) {
             Player player = event.getPlayer();
             getLogger().warning(PlainTextComponentSerializer.plainText().serialize(player.displayName()) + " just mined a diamond!");
+            player.sendMessage("YOU JUST MINED A DIAMOND THAT'S AMAZING!");
         }
         else if (block.getType() == Material.DEEPSLATE_DIAMOND_ORE) {
             Player player = event.getPlayer();
             getLogger().warning(PlainTextComponentSerializer.plainText().serialize(player.displayName()) + " just mined a diamond way down deep!");
+            player.sendMessage("YOU JUST MINED A DEEP DOWN DIAMOND THAT'S AMAZING!");
         }
         return;
 
