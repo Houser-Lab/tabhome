@@ -24,6 +24,16 @@ public class JoinHandler implements Listener {
             data.set(new NamespacedKey(TablistHomes.getPlugin(), "homecount"), PersistentDataType.INTEGER, 0);
 
         }
+        if (!data.has(new NamespacedKey(TablistHomes.getPlugin(), "1Set"), PersistentDataType.INTEGER)){
+
+            data.set(new NamespacedKey(TablistHomes.getPlugin(), "1Set"), PersistentDataType.INTEGER, 0);
+
+        }
+        if (!data.has(new NamespacedKey(TablistHomes.getPlugin(), "1Name"), PersistentDataType.STRING)){
+
+            data.set(new NamespacedKey(TablistHomes.getPlugin(), "1Name"), PersistentDataType.STRING, " ");
+
+        }
         if (!data.has(new NamespacedKey(TablistHomes.getPlugin(), "x1"), PersistentDataType.INTEGER)){
 
             data.set(new NamespacedKey(TablistHomes.getPlugin(), "x1"), PersistentDataType.INTEGER, 0);
@@ -37,6 +47,16 @@ public class JoinHandler implements Listener {
         if (!data.has(new NamespacedKey(TablistHomes.getPlugin(), "z1"), PersistentDataType.INTEGER)){
 
             data.set(new NamespacedKey(TablistHomes.getPlugin(), "z1"), PersistentDataType.INTEGER, 0);
+        }
+        if (!data.has(new NamespacedKey(TablistHomes.getPlugin(), "2Set"), PersistentDataType.INTEGER)){
+
+            data.set(new NamespacedKey(TablistHomes.getPlugin(), "2Set"), PersistentDataType.INTEGER, 0);
+
+        }
+        if (!data.has(new NamespacedKey(TablistHomes.getPlugin(), "2Name"), PersistentDataType.STRING)){
+
+            data.set(new NamespacedKey(TablistHomes.getPlugin(), "2Name"), PersistentDataType.STRING, " ");
+
         }
         if (!data.has(new NamespacedKey(TablistHomes.getPlugin(), "x2"), PersistentDataType.INTEGER)){
 
