@@ -31,7 +31,7 @@ public final class TablistHomes extends JavaPlugin {
             this.getDataFolder().mkdir();
 
 
-        getLogger().warning("Startup Finished!");
+        getLogger().warning("Startup  Finished!");
 
     }
 
